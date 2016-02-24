@@ -1,6 +1,6 @@
 {
 	"name": "obj-csv",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "\"Convert a JavaScript object to a csv text format\"",
 	"main": "index.js",
 	"scripts": {
@@ -19,7 +19,7 @@
 	"author": "Sebastian Vizcaino",
 	"license": "ISC",
 	"dependencies": {
-		"async": "^1.5.2",
-		"lodash": "^4.5.1"
+		"async": "1.5.2",
+		"lodash": "4.5.1"
 	}
 }

@@ -10,13 +10,13 @@ module.exports = function(object, query, cb) {
 		csv = csv.substring(0, csv.length - 1);
 		csv += '\n';
 		async.each(object, function(obj, cb) {
-			_(query).forEach(function(key) {
+			query.forEach(function(key) {
 				try {
 					csv += '"' + eval("obj." + key) + '"' + ',';
 				} catch (e) {
 					csv += '"' + '' + '"' + ',';
 				}
-			}).value();
+			});
 			csv = csv.substring(0, csv.length - 1);
 			csv += '\n';
 			cb(null);
